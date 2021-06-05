@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">UTSPraktik-IF11K-10118902-AgungSepruloh</string>
+    <string name="form">Form Pengisian Data</string>
+    <string name="nik">NIK</string>
+    <string name="enter_nik">Masukkan NIK</string>
+    <string name="name">Nama</string>
+    <string name="enter_name">Masukkan nama</string>
+    <string name="birth_date">Tanggal Lahir</string>
+    <string name="enter_birth_date">Tanggal Lahir</string>
+    <string name="sex">Jenis Kelamin</string>
+    <string name="male">Laki - laki</string>
+    <string name="female">Perempuan</string>
+    <string name="relation">Hubungan Dengan Anda</string>
+    <string name="parent">Orangtua</string>
+    <string name="partner">Suami/Istri</string>
+    <string name="child">Anak</string>
+    <string name="other">Kerabat Lainnya</string>
+    <string name="next">Selanjutnya</string>
+    <string name="info">Info</string>
+    <string name="info_desc">Form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan</string>
 </resources>
