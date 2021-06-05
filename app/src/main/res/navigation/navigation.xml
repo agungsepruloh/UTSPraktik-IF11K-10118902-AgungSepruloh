@@ -9,6 +9,32 @@
         android:id="@+id/formFragment"
         android:name="com.example.utspraktik_if11k_10118902_agungsepruloh.FormFragment"
         android:label="form_fragment"
-        tools:layout="@layout/form_fragment" />
+        tools:layout="@layout/form_fragment" >
+        <action
+            android:id="@+id/action_formFragment_to_formValidationFragment"
+            app:destination="@id/formValidationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/formValidationFragment"
+        android:name="com.example.utspraktik_if11k_10118902_agungsepruloh.FormValidationFragment"
+        android:label="FormValidationFragment"
+        tools:layout="@layout/form_validation_fragment">
+        <argument
+            android:name="nik"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="birthDate"
+            app:argType="string" />
+        <argument
+            android:name="sex"
+            app:argType="string" />
+        <argument
+            android:name="relation"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

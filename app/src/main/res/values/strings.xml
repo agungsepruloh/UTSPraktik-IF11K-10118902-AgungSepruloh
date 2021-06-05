@@ -18,4 +18,10 @@
     <string name="next">Selanjutnya</string>
     <string name="info">Info</string>
     <string name="info_desc">Form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan</string>
+    <string name="validate_your_data">Cek Kembali Isian Data</string>
+    <string name="save">Simpan</string>
+    <string name="change">Ubah</string>
+    <string name="error_message">Data yang harus diisi tidak boleh kosong</string>
+    <string name="success">Success</string>
+    <string name="required"> - Harus Diisi</string>
 </resources>

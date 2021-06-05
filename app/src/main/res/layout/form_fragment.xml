@@ -11,7 +11,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
-            android:paddingVertical="32dp">
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp">
 
             <TextView
                 android:id="@+id/textView"
@@ -19,16 +20,19 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lato"
                 android:text="@string/form"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="24dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:background="@drawable/banner_background">
 
                 <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
@@ -46,7 +50,8 @@
             </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/roboto_medium"
@@ -54,61 +59,120 @@
                 android:textSize="12sp" />
 
             <EditText
-                android:id="@+id/nikTxt"
+                android:layout_height="40dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/input_background"
+                android:id="@+id/nikInput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:ems="10"
                 android:hint="@string/enter_nik"
-                android:inputType="phone" />
+                android:inputType="phone"
+                />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/name"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/name"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:textColor="@color/primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/required"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
 
             <EditText
-                android:id="@+id/nameTxt"
+                android:layout_height="40dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/input_background"
+                android:id="@+id/nameInput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:ems="10"
                 android:hint="@string/enter_name"
                 android:inputType="textPersonName" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/birth_date"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/birth_date"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:textColor="@color/primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/required"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
 
             <EditText
-                android:id="@+id/birthDateTxt"
+                android:layout_height="40dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/input_background"
+                android:id="@+id/birthDateInput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:ems="10"
                 android:hint="@string/enter_birth_date"
                 android:inputType="date" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/sex"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/sex"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:textColor="@color/primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/required"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/genderGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/genderGroup"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
 
                 <RadioButton
                     android:id="@+id/radioButtonMale"
@@ -124,19 +188,37 @@
 
             </RadioGroup>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/relation"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/relation"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:textColor="@color/primary_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/required"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/relationGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/relationGroup"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
 
                 <RadioButton
                     android:id="@+id/radioButtonParent"
@@ -165,11 +247,12 @@
             </RadioGroup>
 
             <Button
+                android:textColor="@color/white"
                 android:id="@+id/nextBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/next"
-                android:layout_marginTop="24dp"/>
+                android:background="@drawable/green_button"/>
 
         </LinearLayout>
 
